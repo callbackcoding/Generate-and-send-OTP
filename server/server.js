@@ -1,7 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const emailRoutes = require("./routes/emailRoutes");
-
+const mongoose = require("mongoose")
+mongoose.connect("mongodb+srv://shantanu:1234@cluster0.veoh8.mongodb.net/")
 const app = express();
 dotenv.config();
 
